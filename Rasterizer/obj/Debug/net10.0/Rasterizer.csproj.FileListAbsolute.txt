@@ -1,0 +1,28 @@
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias exactas\Computación\Rasterizer\Rasterizer\bin\Debug\net10.0\Rasterizer.exe
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias exactas\Computación\Rasterizer\Rasterizer\bin\Debug\net10.0\Rasterizer.deps.json
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias exactas\Computación\Rasterizer\Rasterizer\bin\Debug\net10.0\Rasterizer.runtimeconfig.json
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias exactas\Computación\Rasterizer\Rasterizer\bin\Debug\net10.0\Rasterizer.dll
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias exactas\Computación\Rasterizer\Rasterizer\bin\Debug\net10.0\Rasterizer.pdb
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias exactas\Computación\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias exactas\Computación\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.AssemblyInfoInputs.cache
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias exactas\Computación\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.AssemblyInfo.cs
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias exactas\Computación\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.csproj.CoreCompileInputs.cache
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias exactas\Computación\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.dll
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias exactas\Computación\Rasterizer\Rasterizer\obj\Debug\net10.0\refint\Rasterizer.dll
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias exactas\Computación\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.pdb
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias exactas\Computación\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.genruntimeconfig.cache
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias exactas\Computación\Rasterizer\Rasterizer\obj\Debug\net10.0\ref\Rasterizer.dll
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\bin\Debug\net10.0\Rasterizer.exe
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\bin\Debug\net10.0\Rasterizer.deps.json
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\bin\Debug\net10.0\Rasterizer.runtimeconfig.json
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\bin\Debug\net10.0\Rasterizer.dll
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\bin\Debug\net10.0\Rasterizer.pdb
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.AssemblyInfoInputs.cache
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.AssemblyInfo.cs
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.csproj.CoreCompileInputs.cache
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.dll
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\obj\Debug\net10.0\refint\Rasterizer.dll
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.pdb
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.genruntimeconfig.cache
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\obj\Debug\net10.0\ref\Rasterizer.dll
