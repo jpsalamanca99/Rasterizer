@@ -75,28 +75,30 @@ namespace app
         {
             const int width = 1024;
             const int height = 1024;
-            const int pixelsTo3DUnitsProportion = 200; //For each 3D unity there will be this number of pixels
             const float cameraFiledOfView = 120f;
-            const int numberOfFrames = 5;
-            const float rotationAngle = 8f;
+            const int numberOfFrames = 180;
             const string cubeObjFilePath = ".\\Resources\\Cube.obj";
             const string folderPath = ".\\Output\\PerspectiveCube\\";
 
-            float3 screenSpaceCenter = new(width / 2, height / 2, 1200000);
+            FolderCleaner.CleanFolder(folderPath);
+
 
             RenderObject cube = ObjParser.ToRenderObject(cubeObjFilePath);
-            Camera camera = new(new(0, 0, 0), cameraFiledOfView, pixelsTo3DUnitsProportion, new(width, height));
+            Camera camera = new(new(0, 0, 0), cameraFiledOfView, new(width, height));
             PerspectiveCubeDrawer drawer = new(width, height, cube);
-
-            cube.SetPosition(screenSpaceCenter);
+            float3 cubePosition = new(0f, 0f, 2f);
+            float3 cubeRotation = new(0f, 0f, 0f);
+            cube.UpdateObjectPosition(cubePosition);
 
             Console.WriteLine("Starting render");
             for (int i = 0; i < numberOfFrames; i++)
             {
                 long startTime = Stopwatch.GetTimestamp();
 
+                cubeRotation.y += 2;
                 float3[,] image = drawer.DrawCube(camera);
-                cube.RotateObject(new float3(0f, rotationAngle, 0f));
+                cube.RotateObject(cubeRotation);
+
                 BMPFileWriter.BuildSingleFile(image, folderPath, "frame" + (i + 1) + ".txt", i);
 
                 TimeSpan elapsedTime = Stopwatch.GetElapsedTime(startTime);

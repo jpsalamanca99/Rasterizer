@@ -26,3 +26,4 @@ C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterize
 C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.pdb
 C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.genruntimeconfig.cache
 C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\obj\Debug\net10.0\ref\Rasterizer.dll
+C:\Users\Juan Pablo\Documents\Proyectos\Ciencias\Programing\Rasterizer\Rasterizer\obj\Debug\net10.0\Rasterizer.sourcelink.json

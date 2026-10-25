@@ -3,19 +3,22 @@ using static System.MathF;
 class Transform(float3 virtualSpaceInitialPosition)
 {
     private float3 virtualSpacePosition = virtualSpaceInitialPosition;
-    private float3 ihat = new float3(0, 0, 0);
-    private float3 jhat = new float3(0, 0, 0);
-    private float3 khat = new float3(0, 0, 0);
+    private float3 virtualSpaceRotation = new(0f, 0f, 0f);
+    private float3 iHat = new(0f, 0f, 0f);
+    private float3 jHat = new(0f, 0f, 0f);
+    private float3 kHat = new(0f, 0f, 0f);
 
-    public void Rotate(float3 rotationDegreesComponents)
+    public (float3 ihat, float3 jhat, float3 khat) GetUnitVectors()
     {
-        float[,] matrixX = MatrixMath.VectorArrayToMatrix(RotateAlongX(rotationDegreesComponents.x));
-        float[,] matrixY = MatrixMath.VectorArrayToMatrix(RotateAlongY(rotationDegreesComponents.y));
-        float[,] matrixZ = MatrixMath.VectorArrayToMatrix(RotateAlongZ(rotationDegreesComponents.z));
+        float[,] matrixX = MatrixMath.VectorArrayToMatrix(RotateAlongX(virtualSpaceRotation.x));
+        float[,] matrixY = MatrixMath.VectorArrayToMatrix(RotateAlongY(virtualSpaceRotation.y));
+        float[,] matrixZ = MatrixMath.VectorArrayToMatrix(RotateAlongZ(virtualSpaceRotation.z));
         float3[] newVectors = MatrixMath.MatrixToVectorArray(MatrixMath.Multiply(MatrixMath.Multiply(matrixX, matrixY), matrixZ));
-        ihat = newVectors[0];
-        jhat = newVectors[1];
-        khat = newVectors[2];
+        iHat = newVectors[0];
+        jHat = newVectors[1];
+        kHat = newVectors[2];
+
+        return (iHat, jHat, kHat);
     }
 
     //Rotates the unit vectors X and Z by the given degrees
@@ -43,8 +46,19 @@ class Transform(float3 virtualSpaceInitialPosition)
         return [ihat, jhat, khat];
     }
 
+    public void Move(float3 displacement)
+    {
+        virtualSpacePosition = VectorMath.AddVectors(virtualSpacePosition, displacement);
+    }
+
+    public void Rotate(float3 incrementDegree)
+    {
+        virtualSpaceRotation = VectorMath.AddVectors(virtualSpaceRotation, incrementDegree);
+    }
+
+    public float3 Rotation { get => virtualSpaceRotation; set => virtualSpaceRotation = value; }
     public float3 Position { get => virtualSpacePosition; set => virtualSpacePosition = value; }
-    public float3 UnitVectorX { get => ihat; }
-    public float3 UnitVectorY { get => jhat; }
-    public float3 UnitVectorZ { get => khat; }
+    public float3 IHat { get => iHat; }
+    public float3 JHat { get => jHat; }
+    public float3 KHat { get => kHat; }
 }
