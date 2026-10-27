@@ -29,8 +29,7 @@ class Camera(float3 position, float fieldOfView, float2 resolution)
     public float3 VertexToCameraProjection(float3 vertex)
     {
         float perspectiveScale = (float)Math.Tan(float.DegreesToRadians(fieldOfView / 2f)) * 2f;
-        float projectionToVirtualSpaceRatio = 5;
-        float pixelsPerVirtualSpaceUnit = resolution.y / projectionToVirtualSpaceRatio / vertex.z;
+        float pixelsPerVirtualSpaceUnit = resolution.y / perspectiveScale / vertex.z;
 
         float3 pixelOffset = new float3(vertex.x * pixelsPerVirtualSpaceUnit, vertex.y * pixelsPerVirtualSpaceUnit, 0);
         return new((resolution.x / 2) + pixelOffset.x, (resolution.y / 2) + pixelOffset.y, 0);

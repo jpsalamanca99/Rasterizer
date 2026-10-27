@@ -82,12 +82,11 @@ namespace app
 
             FolderCleaner.CleanFolder(folderPath);
 
-
             RenderObject cube = ObjParser.ToRenderObject(cubeObjFilePath);
             Camera camera = new(new(0, 0, 0), cameraFiledOfView, new(width, height));
             PerspectiveCubeDrawer drawer = new(width, height, cube);
-            float3 cubePosition = new(0f, 0f, 2f);
-            float3 cubeRotation = new(0f, 0f, 0f);
+            float3 cubePosition = new(0f, 0f, 3f);
+            float3 cubeRotation = new(0f, 2f, 0f);
             cube.UpdateObjectPosition(cubePosition);
 
             Console.WriteLine("Starting render");
@@ -95,7 +94,6 @@ namespace app
             {
                 long startTime = Stopwatch.GetTimestamp();
 
-                cubeRotation.y += 2;
                 float3[,] image = drawer.DrawCube(camera);
                 cube.RotateObject(cubeRotation);
 

@@ -45,7 +45,6 @@ class PerspectiveCubeDrawer
         float3 CAxCP = VectorMath.CalculateCrossProduct(faceAsVectors[2], pointVectors[2]);
 
         if (Math.Sign(ABxAP.z) < 0 && Math.Sign(BCxBP.z) < 0 && Math.Sign(CAxCP.z) < 0) return true;
-        // if (Math.Sign(ABxAP.z) > 0 && Math.Sign(BCxBP.z) > 0 && Math.Sign(CAxCP.z) > 0) return true;
         return false;
     }
 }
